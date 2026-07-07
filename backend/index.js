@@ -1,0 +1,12 @@
+require('reflect-metadata');
+require('@babel/register')({
+  presets: [['@babel/preset-env', { targets: { node: 'current' } }]],
+  plugins: [
+    ['@babel/plugin-proposal-decorators', { legacy: true }],
+    ['@babel/plugin-transform-class-properties', { loose: true }],
+    ['@babel/plugin-transform-private-methods', { loose: true }],
+    ['@babel/plugin-transform-private-property-in-object', { loose: true }],
+    ['@babel/plugin-transform-runtime', { regenerator: true }],
+  ],
+});
+require('./src/main');

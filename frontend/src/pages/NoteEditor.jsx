@@ -78,7 +78,7 @@ export default function NoteEditor() {
         </Link>
         <h1>{isEditMode ? 'Edit Note' : 'New Note'}</h1>
         <button className="btn btn-primary" onClick={handleSave} disabled={saving}>
-          {saving ? 'Saving…' : 'Save Note'}
+          {saving ? 'Saving…' : 'Save Note in to db'}
         </button>
       </header>
 
